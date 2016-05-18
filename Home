@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Aller-Tree
+        </title>
+        <script>
+            function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+
+            window.onclick = function(event) {
+                if (!event.target.matches('.dropbtn')) {
+
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                        }
+                    }
+                }
+            }
+        </script>
+
+
+        <script>
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "block"
+                }
+                myIndex++;
+                if (myIndex > x.length) {
+                    myIndex = 1
+                }
+                x[myIndex - 1].style.display = "block";
+                setTimeout(carousel, 2000);
+            }
+        </script>
+
+        <style>
+            body {
+                background-color:white;
+            }
+            h1 {
+                color:white;
+                font-size:65px;
+                align="center";
+                text-decoration:underline;
+            }
+            h2 {
+                color:white;
+                font-size:40px;
+                align="center";
+                text-decoration:underline;
+            }
+            .mySlides {display:none;}
+            .button {
+                padding: 15px 25px;
+                font-size: 24px;
+                text-align: center;
+                cursor: pointer;
+                outline: none;
+                color: #fff;
+                background-color: #00C5FF;
+                border: none;
+                border-radius: 15px;
+                box-shadow: 0 9px #999;
+            }
+            .button:hover {
+                background-color: #00b8cc
+            }
+            .button:active {
+                background-color: #008a99;
+                box-shadow: 0 5px #666;
+                transform: translateY(4px);
+            }
+            .dropbtn {
+                background-color: #0090FF;
+                color: white;
+                padding: 16px;
+                font-size: 16px;
+                border: none;
+                cursor: pointer;
+            }
+            .dropbtn:hover, .dropbtn:focus {
+                background-color: #0168B7;
+            }
+            .dropdown {
+                position: relative;
+                display: inline-block;
+            }
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            }
+            .dropdown-content a {
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+            }
+            .dropdown-content a:hover {
+                background-color: #f1f1f1
+            }
+            .show {
+                display:block;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <div style="background-color:rgb(0,128,0);color:white;margin:-10;padding:0;bordor:0;">
+            <center>
+                 <h1 style="padding:10">Aller-Free</h1>
+            </center>
+        </div>
+        <center>
+            <div style="background-color:rgb(34,139,34);color:white;margin:-45;padding:10;border:0;float:inherit;">
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">Navigation</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        	<a href="Home.html">Home</a>
+                        	<a href="About Us.html">About Us</a>
+                        	<a href="Contact Us.html">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+            
+        </center>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="w3-content w3-section" style="max-width:500px">
+            <img class="mySlides" src="http://www.iwallfinder.com/files/55/the-second-series-of-happy-family-life-27105.jpg" style="width:100%">
+            <img class="mySlides" src="http://tricialottwilliford.com/wp-content/uploads/2014/11/bigstock-Silhouette-Of-Happy-Family-And-54362507.jpg" style="width:100%">
+            <img class="mySlides" src="http://www.njfpc.org/wp-content/uploads/2013/08/happy-family1.jpg" style="width:100%">
+        </div>
+        <br>
+        <br>
+         <div style="background-color:rgb(0,128,0);color:white;margin:-10;padding:0;bordor:0;">
+            <center>
+                 <h2 style="padding:10">Information</h2>
+            </center>
+        </div>
+<footer>Copyright © 2016 - Patent Pending</footer> 
+</html>
